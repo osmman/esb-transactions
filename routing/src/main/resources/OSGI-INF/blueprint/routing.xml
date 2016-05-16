@@ -76,7 +76,7 @@
     -->
     <bean id="resourceManager" class="org.apache.activemq.jms.pool.GenericResourceManager" init-method="recoverResource">
         <property name="transactionManager" ref="jtaTxManager" />
-        <property name="connectionFactory" ref="jmsXaPoolConnectionFactory" />
+        <property name="connectionFactory" ref="activeMqXaConnectionFactory" />
         <property name="resourceName" value="activemq.default" />
         <property name="userName" value="admin" />
         <property name="password" value="admin" />
